@@ -1,0 +1,7 @@
+#header{
+  width: 900px;
+  height: 200px;
+  background-color: #25B33f;
+  margin-bottom: 10px;
+  background-image: url(images/2.jpg)   - в свойстве указывается путь к изображению. Как сохранить картинку, чтоб потом прописать путь для неё читайте в статье Каталога сайта
+}
