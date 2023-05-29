@@ -38,7 +38,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_check_c(self):#конус
-        tester = app.test_client(self)
+        tester = app.test_client(self)# запрос POST, вы должны каким-то образом закодировать данные, которые образуют тело запроса.
         response = tester.post("/2.html", content_type='multipart/form-data', data={'num_1': -3, 'num_2': 1, 'num_3':-1})
         self.assertIn('0.3', response.data.decode())
 
