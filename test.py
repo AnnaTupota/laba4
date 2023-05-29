@@ -97,7 +97,7 @@ class TestStringMethods(unittest.TestCase):
     def test_shar_page(self):  # тестируем ERORRRR
         tester = app.test_client(self)
         response = tester.get('/ERORRRR.html')
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 404)
 
 if __name__ == '__test__':
     unittest.test()
